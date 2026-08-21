@@ -12,13 +12,45 @@
 			height: 100vh;
 			margin: 0;
 			text-align: center;
-			font-family: sans-serif;
+			font-family: 'Segoe UI', sans-serif;
+			background: linear-gradient(135deg, #e8f1fb, #ffffff);
+		}
+		.card {
+			background: white;
+			padding: 3rem 4rem;
+			border-radius: 16px;
+			box-shadow: 0 8px 30px rgba(0, 120, 212, 0.15);
 		}
 		h1 {
-			font-size: 5rem;
+			font-size: 3.5rem;
+			color: #0078D4;
+			margin-bottom: 0.5rem;
+		}
+		p {
+			font-size: 1.3rem;
+			color: #333;
+			margin-bottom: 2rem;
+		}
+		a.button {
+			display: inline-block;
+			background: #0078D4;
+			color: white;
+			text-decoration: none;
+			padding: 0.8rem 2rem;
+			border-radius: 8px;
+			font-size: 1.1rem;
+			transition: background 0.2s;
+		}
+		a.button:hover {
+			background: #005a9e;
+		}
 	</style>
 </head>
 <body>
-	<h1>Hello, Azure! ☁️</h1>
+	<div class="card">
+		<h1>Hello, Azure! ☁️</h1>
+		<p>Ez az első weboldalam.</p>
+		<a class="button" href="https://azure.microsoft.com" target="_blank">Tudj meg többet</a>
+	</div>
 </body>
 </html>
