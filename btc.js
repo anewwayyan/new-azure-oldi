@@ -11,9 +11,9 @@ function render() {
 	const remaining = BTC_MAX_SUPPLY - minedDisplay;
 
 	document.getElementById("btc-mined").textContent =
-		`Total mined: ${minedDisplay.toLocaleString("en-US", { minimumFractionDigits: 4, maximumFractionDigits: 4 })} BTC`;
+		`Total mined: ${minedDisplay.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} BTC`;
 	document.getElementById("btc-remaining").textContent =
-		`Remaining to mine: ${remaining.toLocaleString("en-US", { minimumFractionDigits: 4, maximumFractionDigits: 4 })} BTC`;
+		`Remaining to mine: ${remaining.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} BTC`;
 }
 
 async function syncWithApi() {
