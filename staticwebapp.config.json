@@ -1,13 +1,17 @@
 {
   "routes": [
     {
-      "route": "/about.html",
+      "route": "/cv.html",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/cv.pdf",
       "allowedRoles": ["authenticated"]
     }
   ],
   "responseOverrides": {
     "401": {
-      "redirect": "/.auth/login/aad?post_login_redirect_uri=/about.html",
+      "redirect": "/.auth/login/aad?post_login_redirect_uri=/cv.html",
       "statusCode": 302
     }
   }
