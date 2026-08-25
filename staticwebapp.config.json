@@ -3,10 +3,6 @@
     {
       "route": "/about.html",
       "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/.auth/login/aad",
-      "statusCode": 302
     }
   ],
   "responseOverrides": {
