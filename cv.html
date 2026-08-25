@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CV - My First Azure Website</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<a href="index.html">Főoldal</a>
+		<a href="/.auth/login/aad?post_login_redirect_uri=/about.html">Rólam</a>
+		<a href="cv.html">CV</a>
+	</nav>
+
+	<button class="theme-toggle" onclick="toggleTheme()">🌙 Sötét mód</button>
+
+	<div class="card">
+		<h2>CV <span class="cloud">☁️</span></h2>
+		<p>Itt találod a letölthető önéletrajzomat.</p>
+		<a class="button" href="cv.pdf" target="_blank">CV megnyitása</a>
+		<a class="button" href="cv.pdf" download>Letöltés</a>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
