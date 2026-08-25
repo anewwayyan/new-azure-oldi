@@ -123,6 +123,13 @@ p {
 	opacity: 0.7;
 }
 
+#btc-mined,
+#btc-remaining {
+	font-family: 'Consolas', 'Courier New', monospace;
+	font-variant-numeric: tabular-nums;
+	font-size: 1.4rem;
+}
+
 .button-group {
 	display: flex;
 	flex-direction: column;
