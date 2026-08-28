@@ -5,12 +5,24 @@ function toggleTheme() {
 
 	if (isDark) {
 		html.removeAttribute('data-theme');
-		btn.textContent = '🌙 Sötét mód';
+		if (btn) btn.textContent = '🌙 Sötét mód';
+		localStorage.setItem('theme', 'light');
 	} else {
 		html.setAttribute('data-theme', 'dark');
-		btn.textContent = '☀️ Világos mód';
+		if (btn) btn.textContent = '☀️ Világos mód';
+		localStorage.setItem('theme', 'dark');
 	}
 }
+
+function applyStoredTheme() {
+	const savedTheme = localStorage.getItem('theme');
+	const btn = document.querySelector('.theme-toggle');
+	if (savedTheme === 'dark') {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		if (btn) btn.textContent = '☀️ Világos mód';
+	}
+}
+applyStoredTheme();
 
 const startDate = new Date("2026-08-21");
 function updateCounter() {
